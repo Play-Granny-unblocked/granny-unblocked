@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Granny Unblocked GitHub – Play Free Online</title>
+<title>Granny Unblocked GitHub – Play Free Online Horror Game</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO -->
-<meta name="description" content="Play Granny Unblocked GitHub version online. Escape the scary house, solve puzzles, and survive. Click Play Now to start. No download required.">
+<meta name="description" content="Play Granny Unblocked GitHub version online. Escape the scary house, solve puzzles, hide from Granny, and survive. Click Play Now to start playing instantly.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://play-granny-unblocked.github.io/granny-unblocked/">
 
@@ -15,7 +15,6 @@
 <meta property="og:description" content="Granny Unblocked horror escape game. Click Play Now and survive the night.">
 <meta property="og:type" content="website">
 
-<!-- STYLE -->
 <style>
 body {
   margin: 0;
@@ -38,7 +37,7 @@ header h1 {
 
 header p {
   color: #ccc;
-  max-width: 700px;
+  max-width: 800px;
   margin: 10px auto 0;
 }
 
@@ -51,7 +50,7 @@ header p {
 .game-box {
   position: relative;
   background: #000;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
 }
@@ -60,10 +59,18 @@ header p {
   position: absolute;
   inset: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   background: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.game-placeholder img {
+  max-width: 90%;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .play-btn {
@@ -104,6 +111,23 @@ iframe {
   border: none;
   display: none;
 }
+
+/* DESCRIPTION */
+.description {
+  margin-top: 40px;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.description img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.description a {
+  color: #4da3ff;
+}
 </style>
 
 <!-- SCHEMA -->
@@ -130,19 +154,18 @@ iframe {
 
 <div class="container">
 
+  <!-- GAME AREA -->
   <div class="game-box" id="gameBox">
 
-    <!-- CONTROLS -->
     <div class="controls" id="controls">
       <button onclick="toggleFullscreen()">⛶ Fullscreen</button>
     </div>
 
-    <!-- PLACEHOLDER -->
     <div class="game-placeholder" id="placeholder">
+      <img src="Granny unblocked image github.webp" alt="Granny Unblocked Screenshot">
       <button class="play-btn" onclick="loadGame()">▶ Play Now</button>
     </div>
 
-    <!-- GAME IFRAME -->
     <iframe
       id="gameFrame"
       src=""
@@ -152,9 +175,37 @@ iframe {
 
   </div>
 
+  <!-- DESCRIPTION -->
+  <div class="description">
+    <h2>About Granny Unblocked</h2>
+
+    <p>
+      <strong>Granny Unblocked</strong> is a terrifying horror escape game where you are trapped inside a creepy house.
+      Your goal is to quietly explore rooms, solve puzzles, collect items, and escape without being caught.
+      Granny hears everything — even the smallest noise can reveal your location.
+    </p>
+
+    <img src="Granny unblocked image github.webp" alt="Granny Unblocked Gameplay Screenshot">
+
+    <p>
+      This <strong>Granny Unblocked GitHub version</strong> lets you play directly in your browser with no downloads,
+      no installations, and no restrictions. It works perfectly on school networks and low-end devices.
+    </p>
+
+    <p>
+      👉 <a href="/" title="More Unblocked Games">Play more unblocked games</a> (internal link)
+    </p>
+
+    <p>
+      Official mobile versions:
+      <br>
+      🔗 <a href="https://apps.apple.com/us/app/granny/id1323957120" target="_blank" rel="nofollow noopener">Granny on App Store</a><br>
+      🔗 <a href="https://play.google.com/store/apps/details?id=com.dvloper.granny&hl=en" target="_blank" rel="nofollow noopener">Granny on Google Play</a>
+    </p>
+  </div>
+
 </div>
 
-<!-- SCRIPT -->
 <script>
 function loadGame() {
   const iframe = document.getElementById('gameFrame');
